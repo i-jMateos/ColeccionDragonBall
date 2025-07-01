@@ -27,3 +27,8 @@ struct Saga {
     }
 }
 
+func generateComics() -> [Comic] {
+    (1...34).map {
+        Comic(id: $0, title: "Volum \($0)", imageName: "ultimate\($0)", owned: false)
+    }
+}

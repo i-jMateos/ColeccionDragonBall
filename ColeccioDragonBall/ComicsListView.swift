@@ -17,7 +17,9 @@ struct ComicSection: Identifiable {
 struct ComicsListView: View {
     let sections: [ComicSection] = [
         ComicSection(title: "Color", imageName: "color", destination: AnyView(ColorComicsView())),
-        ComicSection(title: "Ultimate", imageName: "ultimate", destination: AnyView(Text("Vista Ultimate"))),
+        ComicSection(title: "Ultimate", imageName: "ultimate0", destination: AnyView(UltimateComicsView())),
+
+
         ComicSection(title: "Legend", imageName: "legend", destination: AnyView(Text("Vista Legend"))),
         ComicSection(title: "Super", imageName: "super", destination: AnyView(Text("Vista Super"))),
         ComicSection(title: "Pel·lícules", imageName: "peliculas", destination: AnyView(Text("Vista Pel·lícules")))

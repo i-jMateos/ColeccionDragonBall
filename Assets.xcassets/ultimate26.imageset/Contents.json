@@ -1,0 +1,21 @@
+
+cd ~/Desktop/ultimate
+
+for file in ultimate*.png; do
+  name="ultimate26"
+  mkdir -p "../ColeccioDragonBall/Assets.xcassets/ultimate26.imageset"
+  cp "ultimate26.png" "../ColeccioDragonBall/Assets.xcassets/ultimate26.imageset/ultimate26.png"
+  cat > "../ColeccioDragonBall/Assets.xcassets/ultimate26.imageset/Contents.json" <<EOF
+{
+  "images": [
+    {
+      "idiom": "universal",
+      "filename": "ultimate26.png",
+      "scale": "1x"
+    }
+  ],
+  "info": {
+    "version": 1,
+    "author": "xcode"
+  }
+}
